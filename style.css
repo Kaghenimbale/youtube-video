@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    overflow-x: hidden;
+}
+
+header{
+    width: 98%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.common{
+    display: flex;
+    align-items: center;
+}
+/* left section */
+.header .left-side{
+    gap: 30px;
+}
+.header .left-side .menu{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.header .left-side .menu img{
+    width: 100%;
+    height: 100%;
+    
+}
+.header .left-side .home{
+    width: 7rem;
+    height: 3rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+.header .left-side .home img{
+    width: 100%;
+    height: 100%;
+}
+
+/* middle */
+.header .middle input{
+    width: 600px;
+    height: 40px;
+    border: 1px lightgray solid;
+    margin-right: -1px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-left: 30px;
+    padding-right: 5px;
+    font-size: 1.3rem;
+    color: rgb(68, 68, 68);
+    box-shadow: inset 0.5px 1px 2px rgb(241, 240, 240);
+}
+.header .middle input::placeholder{
+    border-color: lightgray;
+}
+.header .middle .search{
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgb(242, 242, 242);
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 1px solid rgb(209, 209, 209);
+}
+.header .middle .search img{
+    width: 100%;
+    height: 100%;
+}
+.header .middle .voice-icon-search{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    background: rgb(245, 245, 245);
+    margin-left: 15px;
+    box-shadow: 0 0 1px;
+    border: 1px solid lightgray;
+}
+.header .middle .voice-icon-search img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* right side */
+.header .right-side{
+    gap: 20px;
+}
+.header .right-side .upload{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.header .right-side .upload img{
+    width: 100%;
+    height: 100%;
+}
+
+.header .right-side .notification{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.header .right-side .notification img{
+    width: 100%;
+    height: 100%;
+}
+.header .right-side .notification h2{
+    position: absolute;
+    background-color: red;
+    font-size: 1rem;
+    color: white;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    top: 30px;
+    right: 80px;
+}
+.header .right-side .profile-image{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.header .right-side .profile-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* main section */
+.main-section{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    /* background-color: aqua; */
+    padding-top: 20px;
+    display: flex;
+}
+.main-section .container .content{
+    margin-top: 30px;
+}
+.main-section .container .videos {
+    width: 70vw;
+    height: 75%;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.main-section .container .videos .video{
+    width: 100%;
+    height: 100%;
+}
+.main-section .suggestions{
+    width: 30%;
+    height: 100vh;
+    /* background-color: blue; */
+    margin-left: 20px;
+    overflow: hidden;
+}
+.main-section .suggestions .card{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+.main-section .suggestions .card .video-image{
+    width: 290px;
+    height: 115px;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.main-section .suggestions .card .video-image img{
+    width: 100%;
+    height: 100%;
+}
+.main-section .suggestions .card .content .title{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.main-section .suggestions .card .content .title img{
+    margin-top: 8px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+}
+.main-section .suggestions .card .content .title img:hover{
+    cursor: pointer;
+}
+.main-section .suggestions .card .content{
+    line-height: 1.5;
+}
+.main-section .suggestions .card .content h2{
+    color: rgb(46, 46, 46);
+    font-size: 1.4rem;
+}
+.main-section .suggestions .card .content .author{
+    color: rgb(92, 92, 92);
+}
+.main-section .suggestions .card .content .stats{
+    display: flex;
+    gap: 20px;
+}
+.main-section .container .content .stats .profile h1{
+    background-color: rgb(51, 110, 51);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
